@@ -1,5 +1,5 @@
 # node-http-collection
-I will collect some interesting http module in this repo. :)
+I will collect some interesting http modules in this place. :)
 
 ## 普通代理
 **HTTP权威指南(6)-「代理」**
