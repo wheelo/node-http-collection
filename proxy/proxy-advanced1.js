@@ -1,7 +1,6 @@
-// One concrete version can be found in Node DOC guanwang:
-// https://nodejs.org/docs/latest-v5.x/api/http.html#http_class_http_server
-
-// the section of Event: 'connect' of Class: http.ClientRequest
+// One concrete version can be found in Node DOC official website in:
+// https://nodejs.org/docs/latest-v5.x/api/http.html#http_event_connect
+// in the section of Event: 'connect' of Class: http.ClientRequest
 
 var http = require('http');
 var net = require('net');
