@@ -11,10 +11,12 @@ I will collect some interesting http modules in this place. :)
 		- req: (Readable) http.IncomingMessage(1)
 
 - http.createServer(function (request, response) { })
-	- request: (Readable) IncomingMessage(2)
+	- request: (Readable) http.IncomingMessage(2)
 	- response: (Writable) http.ServerResponse
 	- return: instance of http.Server(extends from net.Server) 
 		- Event: 'connection, listen, close, upgrade, (request)'
+
+* An IncomingMessage object is created by http.Server or http.ClientRequest and passed as the first argument to the 'request' and 'response' event respectively. It may be used to access response status, headers and data.
 
 - Class: net.Socket
 	- (Duplex Stream): an abstraction of a TCP or local socket net.Socket.
