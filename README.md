@@ -16,8 +16,9 @@ I will collect some interesting http modules in this place. :)
 		- response: (Writable) `http.ServerResponse`
 
 	- return: instance of http.Server(extends from net.Server) 
-		- Event: 'connection, listen, close, upgrade, request'
-			
+		- Event: 'connect, connection, request, upgrade, close, listen'
+			- connect: Emitted each time a client requests a http `CONNECT` method
+			- connection: When a new TCP stream is establishe. connection(functon(socket)): socket:(an object of type `net.Socket`)
 
 
 *An IncomingMessage object is created by http.Server or http.ClientRequest and passed as the first argument to the 'request' and 'response' event respectively. It may be used to access response status, headers and data.
@@ -28,7 +29,7 @@ They can be created by the user and used as a client (with connect()) or they ca
 	- Client
 	``
 	var client(net.Socket) = net.connect({port: 8124}, function() {
-		client.wirte('')
+		client.write('')
 	})
 	client.on('data')
 	``
