@@ -14,8 +14,8 @@ I will collect some interesting http modules in this place. :)
 
 - http.createServer(function (request, response) { })  (it is also the 'request' event on the createServer())
 	- Emitted each time there is a request. Note that there may be multiple requests per connection (in the case of keep-alive connections). `request` is an instance of `http. IncomingMessage` and `response` is an instance of `http.ServerResponse`.
-		- request: (Readable) `http.IncomingMessage`(2)
-		- response: (Writable) `http.ServerResponse`
+		- request: (Readable) `http.IncomingMessage`(2). method: method, url, headers, cookie
+		- response: (Writable) `http.ServerResponse`. method: wirteHead, g(s)etHeader('Set-Cookie')
 
 	- return: instance of `http.Server`(extends from `net.Server`) 
 		- Event: 'connect, connection, request, upgrade, close, listen'
