@@ -3,8 +3,18 @@ I will collect some interesting http modules in this place. :)
 
 
 ## 接口API
-http.createServer
-http.request
+Some important APIs
+
+- http.request(options, callback)
+	- return: (Writable) http.ClientRequest
+	- callback: function(req)
+		- req: (Readable) http.IncomingMessage(1)
+
+- http.createServer(function (request, response) { })
+	- request: (Readable) IncomingMessage(2)
+	- response: (Writable) http.ServerResponse
+	- return: instance of http.Server(extends from net.Server) 
+		- Event: 'connection, listen, close, upgrade, (request)'
 
 
 ## 两种代理
