@@ -17,7 +17,7 @@ I will collect some interesting http modules in this place. :)
 		- request: (Readable) `http.IncomingMessage`(2)
 		- response: (Writable) `http.ServerResponse`
 
-	- return: instance of http.Server(extends from net.Server) 
+	- return: instance of `http.Server`(extends from `net.Server`) 
 		- Event: 'connect, connection, request, upgrade, close, listen'
 			- connect: Emitted each time a client requests a http `CONNECT` method
 			- connection: When a new TCP stream is established. connection(functon(socket)): socket:(an object of type `net.Socket`)
