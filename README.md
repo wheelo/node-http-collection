@@ -7,8 +7,8 @@ I will collect some interesting http modules in this place. :)
 
 - http.request(options, callback)
 	- return: (Writable) `http.ClientRequest`
-		- Event: `abort, checkExpectation, connect, continue, response, socket, upgrade`
-			- *connect: Emitted each time a server responds to a request with a CONNECT method
+		- Event: 'abort, checkExpectation, *connect, continue, response, socket, upgrade'
+			- connect: Emitted each time a server responds to a request with a CONNECT method
 	- callback: function(req)
 		- req: (Readable) `http.IncomingMessage`(1)
 
