@@ -25,20 +25,20 @@ I will collect some interesting http modules in this place. :)
 - Class: net.Socket
 	- (Duplex Stream): an abstraction of a TCP or local socket net.Socket.
 They can be created by the user and used as a client (with connect()) or they can be created by Node.js and passed to the user through the 'connection' event of a server.
-		- Client
-		``
-		var client(net.Socket) = net.connect({port: 8124}, function() {
-			client.wirte('')
-		})
-		client.on('data')
-		``
-		- Server
-		``
-		net.createServer().on('connection', function(socket) {
-			socket.on('data')
-			socket.on('end')
-		})
-		``
+	- Client: 
+	``
+	var client(net.Socket) = net.connect({port: 8124}, function() {
+		client.wirte('')
+	})
+	client.on('data')
+	``
+	- Server: 
+	``
+	net.createServer().on('connection', function(socket) {
+		socket.on('data')
+		socket.on('end')
+	})
+	``
 
 
 ## 两种代理
