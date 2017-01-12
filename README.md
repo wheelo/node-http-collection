@@ -7,6 +7,8 @@ I will collect some interesting http modules in this place. :)
 
 - http.request(options, callback)
 	- return: (Writable) `http.ClientRequest`
+		- Event: `abort, checkExpectation, connect, continue, response, socket, upgrade`
+			- *connect: Emitted each time a server responds to a request with a CONNECT method
 	- callback: function(req)
 		- req: (Readable) `http.IncomingMessage`(1)
 
@@ -18,7 +20,7 @@ I will collect some interesting http modules in this place. :)
 	- return: instance of http.Server(extends from net.Server) 
 		- Event: 'connect, connection, request, upgrade, close, listen'
 			- connect: Emitted each time a client requests a http `CONNECT` method
-			- connection: When a new TCP stream is establishe. connection(functon(socket)): socket:(an object of type `net.Socket`)
+			- connection: When a new TCP stream is established. connection(functon(socket)): socket:(an object of type `net.Socket`)
 
 
 *An IncomingMessage object is created by http.Server or http.ClientRequest and passed as the first argument to the 'request' and 'response' event respectively. It may be used to access response status, headers and data.
