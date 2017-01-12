@@ -8,15 +8,18 @@ I will collect some interesting http modules in this place. :)
 - http.request(options, callback)
 	- return: (Writable) http.ClientRequest
 	- callback: function(req)
-		- req: (Readable) http.IncomingMessage(1)
+		- req: (Readable) `http.IncomingMessage`(1)
 
 - http.createServer(function (request, response) { })
-	- request: (Readable) http.IncomingMessage(2)
+	- request: (Readable) `http.IncomingMessage`(2)
 	- response: (Writable) http.ServerResponse
 	- return: instance of http.Server(extends from net.Server) 
-		- Event: 'connection, listen, close, upgrade, (request)'
+		- Event: 'connection, listen, close, upgrade, request'
+		- *Event: 'request' : function (request, response) { }
+			- Emitted each time there is a request. Note that there may be multiple requests per connection (in the case of keep-alive connections). `request` is an instance of `http. IncomingMessage` and response is an instance of `http.ServerResponse`.
 
-* An IncomingMessage object is created by http.Server or http.ClientRequest and passed as the first argument to the 'request' and 'response' event respectively. It may be used to access response status, headers and data.
+
+*An IncomingMessage object is created by http.Server or http.ClientRequest and passed as the first argument to the 'request' and 'response' event respectively. It may be used to access response status, headers and data.
 
 - Class: net.Socket
 	- (Duplex Stream): an abstraction of a TCP or local socket net.Socket.
