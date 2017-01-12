@@ -10,7 +10,7 @@ I will collect some interesting http modules in this place. :)
 	- callback: function(req)
 		- req: (Readable) `http.IncomingMessage`(1)
 
-- http.createServer(function (request, response) { })
+- http.createServer(function (request, response) { })  (it is also the 'request' event on the createServer())
 	- request: (Readable) `http.IncomingMessage`(2)
 	- response: (Writable) http.ServerResponse
 	- return: instance of http.Server(extends from net.Server) 
