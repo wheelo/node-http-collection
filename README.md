@@ -1,13 +1,13 @@
 # node-http-collection
-I will collect some interesting http modules in this place. :)
+I will collect some interesting Node.js http modules in this place. :)
 
 
-## 基本概念
-什么是HTTP?
+## HTTP基本概念
+**什么是HTTP?**
 - http是一种协议。计算机之间必须遵守这种协议，才能彼此通信。
 - 流程：1.http客户端发起请求，创建端口 2.http服务器在端口监听客户端请求 3.http服务器向客户端返回状态和内容。
 
-输入网址按Enter之后到浏览器渲染发生了什么事情？
+**输入网址按Enter之后到浏览器渲染发生了什么事情？**
 - 1.域名解析
 	- 浏览器搜索自身的DNS缓存
 	- 浏览器如果没有找到缓存或缓存已经失效，搜索OS自身的DNS缓存
@@ -26,10 +26,12 @@ I will collect some interesting http modules in this place. :)
 
 http的请求与响应都包含请求头与请求体。
 
-**关于web请求详细过程，具体可参考[Web请求处理](https://my.oschina.net/xianggao/blog/669497)**
+**关于web请求详细过程，具体可参考:**
+1.[Web请求处理](https://my.oschina.net/xianggao/blog/667621)
+2.[FEX：内核篇](http://fex.baidu.com/blog/2014/05/what-happen/)
 
-## 接口API
-一些重要API
+## API
+**一些重要的Node HTTP API**
 
 - http.request(options, callback)
 	- return: (Writable) `http.ClientRequest`
