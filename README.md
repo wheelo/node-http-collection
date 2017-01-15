@@ -11,9 +11,9 @@ I will collect some interesting http modules in this place. :)
 			- connect: Emitted each time a server responds to a request with a CONNECT method
 	- callback: function(req)
 		- req: (Readable) `http.IncomingMessage`(1)
-		- the callback shape is indetical to the callback of the 'response' event on 'http.request'. 
+		- the callback shape is identical to the callback of the 'response' event on 'http.request'. 
 
-*For the http request module. Most of time you should use the mature frameworks like [Request](https://github.com/request/request) to handle all the egdge cases and have more kinds of request.
+*For the http request module, most of time you should use the mature frameworks like [Request](https://github.com/request/request) to handle edge cases and have full features of node's request.
 
 - http.createServer(function (request, response) { })  (it is also the 'request' event on the createServer())
 	- Emitted each time there is a request. Note that there may be multiple requests per connection (in the case of keep-alive connections). `request` is an instance of `http. IncomingMessage` and `response` is an instance of `http.ServerResponse`.
