@@ -26,7 +26,7 @@ I will collect some interesting Node.js http modules in this place. :)
 
 http的请求与响应都包含请求头与请求体。
 
-**关于web请求详细过程，具体可参考:** 
+**关于http请求响应的详细过程，可参考下面两篇文章:** 
 - [Web请求处理](https://my.oschina.net/xianggao/blog/667621)
 - [FEX：内核篇](http://fex.baidu.com/blog/2014/05/what-happen/)
 
