@@ -25,7 +25,8 @@ I will collect some interesting http modules in this place. :)
 - 4.浏览器拿到完整的HTML页面代码(字符串)后，解析与渲染页面。一些静态资源如js,css,图片也会以http请求形式同样经过上面的几个步骤。
 
 http的请求与响应都包含请求头与请求体。
-**上述详细过程，可参考[Web请求处理](https://my.oschina.net/xianggao/blog/669497)
+
+*上述详细过程，可参考[Web请求处理](https://my.oschina.net/xianggao/blog/669497)
 
 ## 接口API
 一些重要API
