@@ -24,11 +24,11 @@ I will collect some interesting Node.js http modules in this place. :)
 - 3.服务器端接收到了这个请求，根据路径参数，经过后端的一些处理之后，把处理后的一个结果数据返回给浏览器，比如html页面。
 - 4.浏览器拿到完整的HTML页面代码(字符串)后，解析与渲染页面。一些静态资源如js,css,图片也会以http请求形式同样经过上面的几个步骤。
 
-http的请求与响应都包含请求头与请求体。
+*Note:http的请求与响应都包含http头与正文信息
 
-**关于http请求响应的详细过程，可参考下面两篇文章:** 
+*关于http请求响应的详细过程，可参考下面两篇文章:
 - [Web请求处理](https://my.oschina.net/xianggao/blog/667621)
-- [FEX：内核篇](http://fex.baidu.com/blog/2014/05/what-happen/)
+- *[FEX：内核篇](http://fex.baidu.com/blog/2014/05/what-happen/)
 
 ## API
 **一些重要的Node HTTP API**
