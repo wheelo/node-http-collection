@@ -1,10 +1,10 @@
 # node-http-collection
-I will collect some interesting Node.js http modules in this place. :)
+I will collect some interesting Node.js HTTP modules in this place. :)
 
 
-## HTTP基本概念
-**什么是HTTP?**
-- http是一种协议。计算机之间必须遵守这种协议，才能彼此通信。
+## HTTP Concept
+**Grips with HTTP**
+- In basic terms, HTTP is a well-designed protocol for networking commubicating, which must be abided by millions of computers to communicate. 
 - 流程：1.http客户端发起请求，创建端口 2.http服务器在端口监听客户端请求 3.http服务器向客户端返回状态和内容。
 
 **输入网址按Enter之后到浏览器渲染发生了什么事情？**
@@ -31,7 +31,7 @@ I will collect some interesting Node.js http modules in this place. :)
 - *[FEX：内核篇](http://fex.baidu.com/blog/2014/05/what-happen/)
 
 ## API
-**一些重要的Node HTTP API**
+**Some important Node.js HTTP APIs**
 
 - http.request(options, callback)
 	- return: (Writable) `http.ClientRequest`
