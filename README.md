@@ -4,11 +4,11 @@ I will collect some interesting Node.js HTTP modules in this place. :)
 
 ## HTTP Concept
 **Grips with HTTP**
-- In basic terms, HTTP is a well-designed protocol for networking commubicating, which must be abided by millions of computers to communicate. 
-- 流程：1.http客户端发起请求，创建端口 2.http服务器在端口监听客户端请求 3.http服务器向客户端返回状态和内容。
+- In basic terms, HTTP is a well-designed protocol for networking communicating, which must be abided by millions of computers to communicate. 
+- Process: 1.http client asks for a request and create related port 2.http server listens to the request comming from the client at the same port 3.http server returns state and content back to the client.
 
-**输入网址按Enter之后到浏览器渲染发生了什么事情？**
-- 1.域名解析
+**What happens when you type url into your browser and press enter?**
+- 1.DNS lookup
 	- 浏览器搜索自身的DNS缓存
 	- 浏览器如果没有找到缓存或缓存已经失效，搜索OS自身的DNS缓存
 	- 读取本地HOST文件
@@ -18,7 +18,7 @@ I will collect some interesting Node.js HTTP modules in this place. :)
 			- 运营商服务器把结果返回操作系统内核同时缓存起来
 			- 操作系统把结果返回给浏览器
 			- 最终浏览器拿到了请求域名对应的IP地址
-- 2.http三次握手（当浏览器获取到域名对应的IP后）
+- 2.HTTP three-time handshake(after IP address of corresponding url is acquired)
 	- 浏览器会以随机端口向服务器的web程序发起TCP连接请求。(比如Nginx：80)。路由设备->服务器->网卡->web服务端
 	- 三次握手，连接建立。连接建立后，浏览器想服务器发送HTTP请求，可以采用HTTP中的GET或POST，可采用HTTP 1.0协议。
 - 3.服务器端接收到了这个请求，根据路径参数，经过后端的一些处理之后，把处理后的一个结果数据返回给浏览器，比如html页面。
@@ -26,9 +26,10 @@ I will collect some interesting Node.js HTTP modules in this place. :)
 
 *Note:http的请求与响应都包含http头与正文信息
 
-*关于http请求响应的详细过程，可参考下面两篇文章:
-- [Web请求处理](https://my.oschina.net/xianggao/blog/667621)
-- *[FEX：内核篇](http://fex.baidu.com/blog/2014/05/what-happen/)
+*For a more detailed process about the procedures discussed above, you might refer to these blogs:
+- [Universal model](https://my.oschina.net/xianggao/blog/667621)
+- [FEX：Under the hood](http://fex.baidu.com/blog/2014/05/what-happen/)
+- [Mozilla: Alex](https://github.com/alex/what-happens-when)
 
 ## API
 **Some important Node.js HTTP APIs**
