@@ -27,8 +27,7 @@ I will collect some interesting Node.js HTTP modules in this place. :)
 *Note:http的请求与响应都包含http头与正文信息
 
 *For a more detailed process about the procedures discussed above, you might refer to these blogs:
-- [WEB请求处理系列](https://my.oschina.net/xianggao/blog/667621)
-- [HTTP协议 处理流程](http://www.qixing318.com/article/the-http-protocol-handling-process.html)
+- [WEB请求处理系列](https://my.oschina.net/xianggao/blog/667621)和[HTTP协议处理流程](http://www.qixing318.com/article/the-http-protocol-handling-process.html)
 - [FEX：Under the hood](http://fex.baidu.com/blog/2014/05/what-happen/)
 - [Mozilla: Alex](https://github.com/alex/what-happens-when)
 
