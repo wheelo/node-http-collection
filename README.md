@@ -19,7 +19,7 @@ I will collect some interesting Node.js HTTP modules in this place. :)
 			- 操作系统把结果返回给浏览器
 			- 最终浏览器拿到了请求域名对应的IP地址
 - 2.HTTP three-time handshake(after IP address of corresponding url is acquired)
-	- 浏览器会以随机端口向服务器的web程序发起TCP连接请求。(比如Nginx：80)。路由设备->服务器->网卡->web服务端
+	- 浏览器会以随机端口(arbitrary)向服务器的web程序发起TCP连接请求。(比如Nginx：80)。路由设备->服务器->网卡->web服务端
 	- 三次握手，连接建立。连接建立后，浏览器想服务器发送HTTP请求，可以采用HTTP中的GET或POST，可采用HTTP 1.0协议。
 - 3.服务器端接收到了这个请求，根据路径参数，经过后端的一些处理之后，把处理后的一个结果数据返回给浏览器，比如html页面。
 - 4.浏览器拿到完整的HTML页面代码(字符串)后，解析与渲染页面。一些静态资源如js,css,图片也会以http请求形式同样经过上面的几个步骤。
@@ -27,7 +27,8 @@ I will collect some interesting Node.js HTTP modules in this place. :)
 *Note:http的请求与响应都包含http头与正文信息
 
 *For a more detailed process about the procedures discussed above, you might refer to these blogs:
-- [Universal model](https://my.oschina.net/xianggao/blog/667621)
+- [1.](https://my.oschina.net/xianggao/blog/667621)
+- [2.](http://www.qixing318.com/article/the-http-protocol-handling-process.html)
 - [FEX：Under the hood](http://fex.baidu.com/blog/2014/05/what-happen/)
 - [Mozilla: Alex](https://github.com/alex/what-happens-when)
 
