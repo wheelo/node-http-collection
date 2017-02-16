@@ -94,6 +94,6 @@ They can be created by the user and used as a client (with connect()) or they ca
 ![](https://st.imququ.com/i/webp/static/uploads/2015/11/web_tunnel.png.webp)
 
 
-- **The mature frameworks [Request](https://github.com/request/request#proxies) and [express-http-proxy](https://github.com/villadora/express-http-proxy) have more powerful features to handle the proxy.  You should check them out.**
+- **The mature frameworks [Request](https://github.com/request/request#proxies),[node-http-proxy](https://github.com/nodejitsu/node-http-proxy) and [express-http-proxy](https://github.com/villadora/express-http-proxy) have more powerful features to handle the proxy.  You should check them out.**
 
 
